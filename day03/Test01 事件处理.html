@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="x"">按钮1</button>
+		<script>
+/* 		function f(event){
+			document.write("我被点击了!"+"<br />");
+			document.write(event);
+		} */
+		
+		var node = document.getElementById("x");
+/* 		//事件属性
+		node.onclick = function(event){
+			document.write("我被点击了!"+"<br />");
+			console.log(event);
+			console.log(event.srcElement);
+			console.log(event.target);
+		} */
+		//采用w3c的写法
+		node.addEventListener("click",function(event){
+			console.log("张三被点击了!");
+			console.log(event);
+			console.log(event.srcElement);
+		});
+		node.addEventListener("click",function(event){
+			console.log("李四被点击了!");
+			console.log(event);
+			console.log(event.srcElement);
+		});
+		</script>
+	</body>
+</html>
