@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="f()">按钮1</button>
+		<ul >
+			<li class="xxx" id="x"><a href="http://www.apple.com">苹果</a></li>
+			<li class="xxx">香蕉</li>
+			<li class="xxx">西瓜</li>
+			<li class="xxx">葡萄</li>
+			<li class="xxx">梨</li>
+		</ul>
+		<script src="../../js/jquery-3.6.0.min.js"></script>
+		<script>
+		function f(){
+			//text(),html() 不带参数时 代表 获取
+			//console.log($("#x").html);
+			//console.log($(".xxx").text());//获取所有元素的文本内容
+			//console.log($(".xxx").html());//获取第一个元素的标签
+			//text(),html() 带参数时 代表 设置 作用到所有元素上
+			//$("#x").text("Apple")
+			//$("#x").html("<a href='http://www.apple.com'>Apple</a>")
+            //$(".xxx").text("水果");
+			$(".xxx").html("shuiguo")
+		}
+		</script>
+	</body>
+</html>
