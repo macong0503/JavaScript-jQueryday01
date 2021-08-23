@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		.xxx{color: cornflowerblue;}
+		</style>
+	</head>
+	<body>
+		<button onclick="f()">按钮1</button>
+		<ul id="x">
+			<li class="xxx">苹果</li>
+			<li class="xxx">香蕉</li>
+			<li >西瓜</li>
+			<li >葡萄</li>
+			<li >梨</li>
+		</ul>
+		<script src="../../js/jquery-3.6.0.min.js"></script>
+		<script>
+		function f(){
+			//奇数变色$(".xxx:odd").css("color","red")
+			//偶数变色$(".xxx:even").css("color","red")
+			//大于多少的变色$(".xxx:gt(1)").css("color","red")
+			//小于多少的变色$(".xxx:lt(1)").css("color","red")
+			//$(".xxx:first").css("color","blue")
+			//$("#x li").addClass("xxx");
+			$("#x li").removeClass("xxx");
+		}
+		</script>
+	</body>
+</html>
