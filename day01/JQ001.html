@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="f()">按钮1</button>
+		<div id="xxx">
+			你好，小明
+		</div>
+		<script src="../../js/jquery-3.6.0.min.js"></script>
+		<script>
+		function f(){
+			//普通写法
+/*            var node = document.getElementById("xxx");
+			node.innerText = "hello,world!";
+			console.log(node); */
+			//css写法
+			//jQuery对象：将页面中满足条件的元素纳入进来形成了一个数组对象
+			//特点：更简洁，容错性更高，可链式调用
+			//$("#xxx").text("Hello,world!").css("color","red").css("font-size","50px");
+			$("#xxx").text("Hello,world!").css({color:"blue",
+												fontSize:"50px",
+												fontStyle:"italic"});
+			console.log($("#xxx"));
+			}
+			
+			
+		</script>
+	</body>
+</html>
