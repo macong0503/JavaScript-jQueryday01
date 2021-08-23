@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		#xxx{
+			height: 200px;width: 150px;background-color: #6495ED;
+		}
+		</style>
+	</head>
+	<body>
+		<button onclick="slideUp()">滑出</button>
+		<button onclick="slideDown()">滑入</button>
+		<button onclick="fadeOut()">淡出</button>
+		<button onclick="fadeIn()">淡入</button>
+		<button onclick="hide()">隐藏</button>
+		<button onclick="show()">显出</button>
+		<button onclick="toggle()">转换</button>
+		
+		<div id="xxx">蚊子</div>
+		<script src="../../js/jquery-3.6.0.min.js"></script>
+		<script>
+		function slideUp(){
+			$("#xxx").slideUp(5000);
+		}
+		function slideDown(){
+			$("#xxx").slideDown(5000);
+		}
+		function fadeOut(){
+			$("#xxx").fadeOut(5000);
+		}
+		function fadeIn(){
+			$("#xxx").fadeIn(5000);
+		}
+		function hide(){
+			$("#xxx").hide(5000);
+		}
+		function show(){
+			$("#xxx").show(5000);
+		}
+		function toggle(){
+			$("#xxx").toggle(5000);
+		}
+		</script>
+	</body>
+</html>
